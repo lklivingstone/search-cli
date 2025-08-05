@@ -1,0 +1,6 @@
+To compile:
+g++ -std=c++17 -pthread main.cpp thread_pool.cpp file_search.cpp search_worker.cpp arg_parser.cpp utils.cpp -o search-cli
+
+
+Usage:
+./search-cli --pattern="one" --extensions=c,cpp --threads=2 --details
