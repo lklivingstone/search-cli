@@ -1,3 +1,14 @@
+# Multithreaded Text Search CLI Tool
+
+## How does it work?
+
+It first finds and stores all the files with the given _extensions_ in a vector.
+Once found, it passes them to tasks vector from which _N_ threads will pick them up when available.
+The _N_ threads are created in a threadpool.
+
+To watch this in action, check the [Detailed Output](#detailed-output)
+
+
 ## Usage
 
 ```
